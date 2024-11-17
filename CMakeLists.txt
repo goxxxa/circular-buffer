@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(circular-buffer
         main.cpp
+        circular_buffer.h
+        circular_buffer.cpp
 )
