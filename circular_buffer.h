@@ -3,6 +3,7 @@
 
 #include <cstdio>
 #include <ostream>
+#include <vector>
 
 class CircularBuffer {
 public:
@@ -13,8 +14,8 @@ public:
     explicit CircularBuffer(int bufferLength);
     ~CircularBuffer();
 
-    int read(int index);
-    void write(int value);
+    void read(int numberOfIteration, std::vector<int> &copyBuffer);
+    void write(int numberOfIteration);
 
     int &operator[](int index) const;
 
